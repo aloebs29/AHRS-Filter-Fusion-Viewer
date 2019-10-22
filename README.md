@@ -1,6 +1,6 @@
 # AHRS Filter/Fusion Viewer
 
-This is a notebook for evaluating filter/fusion methods on tests performed with 9-DOF motion detectors in real-time. 
+This is a notebook for evaluating the performance of filter/fusion methods on tests performed with 9-DOF motion detectors. 
 
 ![Fused Data Plots](/screenshots/fused_plots.PNG?raw=true "Fused Data Plots")
 
