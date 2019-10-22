@@ -20,9 +20,9 @@ def quat_from_accel(accel):
     theta = math.acos(np.dot(z_hat, a_hat))
     
     # Calculate quaternion orientation by rotation of theta about the orthogonal unit vector
-    sin_over_2 = math.sin(theta) / 2.0
+    sin_over_2 = math.sin(theta / 2.0)
     quat = [
-        (math.cos(theta) / 2.0),
+        (math.cos(theta / 2.0)),
         (-orth_hat[0] * sin_over_2),
         (-orth_hat[1] * sin_over_2),
         (-orth_hat[2] * sin_over_2)

@@ -24,7 +24,7 @@ def madgwick_update_6(quat_in, accel, gyro, delta_t, beta, zeta):
     quat_norm = np.linalg.norm(quat)
     if (quat_norm == 0.0):
         return quat_in # invalid update, return previous orientation
-    
+
     return (quat / quat_norm)
 
 # Helper functions
